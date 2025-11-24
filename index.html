@@ -3,71 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>p5.js 작품 모음</title>
+    <title>p5.js 과제 모음 (4분할)</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        #projects {
+        .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
-            max-width: 900px;
+            gap: 30px;
+            justify-items: center;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
-        .project {
-            padding: 20px;
-            border: 1px solid #ccc;
+        .box {
             text-align: center;
-            border-radius: 8px;
-            background: #f9f9f9;
-            transition: 0.2s;
         }
 
-        .project:hover {
-            background: #eaeaea;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
+        .title {
+            font-size: 20px;
             font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 600px;
+            height: 400px; /* 3:2 비율 */
+            border: none;
+            background: #000;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>나의 p5.js 작품</h1>
-        <p>아래 링크를 클릭하세요.</p>
-    </header>
 
-    <section id="projects">
-
-        <div class="project">
-            <a href="sample1/index.html">프로젝트 1</a>
+    <div class="grid">
+        
+        <div class="box">
+            <div class="title">과제 1</div>
+            <iframe src="sample1/index.html"></iframe>
         </div>
 
-        <div class="project">
-            <a href="sample4/index.html">프로젝트 4</a>
+        <div class="box">
+            <div class="title">과제 4</div>
+            <iframe src="sample4/index.html"></iframe>
         </div>
 
-        <div class="project">
-            <a href="sample2/index.html">프로젝트 2</a>
+        <div class="box">
+            <div class="title">과제 2</div>
+            <iframe src="sample2/index.html"></iframe>
         </div>
 
-        <div class="project">
-            <a href="sample3/index.html">프로젝트 3</a>
+        <div class="box">
+            <div class="title">과제 3</div>
+            <iframe src="sample3/index.html"></iframe>
         </div>
 
-    </section>
+    </div>
+
 </body>
 </html>
